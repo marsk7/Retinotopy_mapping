@@ -1,0 +1,13 @@
+------------------------------
+SUBJECT sub-wlsubj001
+START_TIME Mon Apr 6 23:32:26 EDT 2020
+END_TIME Tue Apr 7 00:12:23 EDT 2020
+RUNTIME_HOURS 0.666
+USER cbi
+HOST c34-16
+PROCESSOR x86_64
+OS Linux
+UNAME Linux c34-16 3.10.0-514.10.2.el7.x86_64 #1 SMP Fri Mar 3 00:04:05 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+VERSION $Id: recon-all,v 1.580.2.16 2017/01/18 14:11:24 zkaufman Exp $
+CMDPATH /opt/freesurfer/bin/recon-all
+CMDARGS -autorecon3 -openmp 8 -subjid sub-wlsubj001 -sd /beegfs/cbi/work/data/wlsubj001.bOVWwnxx/data/derivatives/freesurfer -nosphere -nosurfreg -nojacobian_white -noavgcurv -nocortparc -nopial -noparcstats -nocortparc2 -noparcstats2 -nocortparc3 -noparcstats3 -nopctsurfcon -nocortribbon -nobalabels

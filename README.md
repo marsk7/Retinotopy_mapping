@@ -15,5 +15,5 @@ The following arguments mean:
 ### e.g.
 `!deepRetinotopy -s /neurodesktop-storage/nyu_retinotopy_data/freesurfer/sub-wlsubj001/surf \
                 -t /neurodesktop-storage/HCPpipelines-master/global/templates/standard_mesh_atlases/resample_fsaverage/fs_LR-deformed_to-fsaverage.L.sphere.32k_fs_LR.surf.gii \
-                -d "HCP" \
-                -m "leftHemisphere"`
+                -d nyu \
+                -m polarAngle,eccentricity`

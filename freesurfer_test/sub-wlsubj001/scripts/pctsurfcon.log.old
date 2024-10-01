@@ -1,0 +1,9 @@
+Logfile for pctsurfcon
+Mon Apr  6 22:58:42 EDT 2020
+setenv SUBJECTS_DIR /beegfs/cbi/work/data/wlsubj001.bOVWwnxx/data/derivatives/freesurfer
+cd /beegfs/cbi/work/data/wlsubj001.bOVWwnxx/data/derivatives/freesurfer/sub-wlsubj001/scripts
+/opt/freesurfer/bin/pctsurfcon
+$Id: pctsurfcon,v 1.15 2016/02/12 21:43:15 zkaufman Exp $
+Linux c34-16 3.10.0-514.10.2.el7.x86_64 #1 SMP Fri Mar 3 00:04:05 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+FREESURFER_HOME /opt/freesurfer
+Cleaning up

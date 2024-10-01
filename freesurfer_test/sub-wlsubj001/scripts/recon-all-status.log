@@ -1,0 +1,55 @@
+status file for recon-all
+Mon Apr  6 16:55:11 EDT 2020
+#@# MotionCor Mon Apr  6 16:55:17 EDT 2020
+#@# Talairach Mon Apr  6 16:55:32 EDT 2020
+#@# Talairach Failure Detection Mon Apr  6 17:02:26 EDT 2020
+#@# Nu Intensity Correction Mon Apr  6 17:02:26 EDT 2020
+#@# Intensity Normalization Mon Apr  6 17:17:27 EDT 2020
+recon-all -s sub-wlsubj001 finished without error at Mon Apr  6 17:21:46 EDT 2020
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Mon Apr  6 17:22:40 EDT 2020
+#@# EM Registration Mon Apr  6 17:22:40 EDT 2020
+#@# CA Normalize Mon Apr  6 17:27:31 EDT 2020
+#@# CA Reg Mon Apr  6 17:30:50 EDT 2020
+#@# SubCort Seg Mon Apr  6 19:31:49 EDT 2020
+#@# Merge ASeg Mon Apr  6 20:43:58 EDT 2020
+#@# Intensity Normalization2 Mon Apr  6 20:43:58 EDT 2020
+#@# Mask BFS Mon Apr  6 20:49:47 EDT 2020
+#@# WM Segmentation Mon Apr  6 20:49:55 EDT 2020
+#@# Fill Mon Apr  6 20:53:06 EDT 2020
+recon-all -s sub-wlsubj001 finished without error at Mon Apr  6 20:54:26 EDT 2020
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Mon Apr  6 23:07:53 EDT 2020
+#@# Cortical ribbon mask Mon Apr  6 23:07:53 EDT 2020
+recon-all -s sub-wlsubj001 finished without error at Mon Apr  6 23:22:43 EDT 2020
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Mon Apr  6 23:32:26 EDT 2020
+#@# Relabel Hypointensities Mon Apr  6 23:32:26 EDT 2020
+#@# AParc-to-ASeg aparc Mon Apr  6 23:33:04 EDT 2020
+#@# AParc-to-ASeg a2009s Mon Apr  6 23:42:22 EDT 2020
+#@# AParc-to-ASeg DKTatlas Mon Apr  6 23:51:43 EDT 2020
+#@# APas-to-ASeg Tue Apr  7 00:01:00 EDT 2020
+#@# ASeg Stats Tue Apr  7 00:01:09 EDT 2020
+#@# WMParc Tue Apr  7 00:02:15 EDT 2020
+recon-all -s sub-wlsubj001 finished without error at Tue Apr  7 00:12:23 EDT 2020

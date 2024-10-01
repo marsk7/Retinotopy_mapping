@@ -1,0 +1,1 @@
+mris_inflate -no-save-sulc -n 50 ../surf/rh.smoothwm.nofix ../surf/rh.inflated.nofix

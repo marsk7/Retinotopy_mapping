@@ -1,0 +1,1 @@
+mris_inflate -rusage /beegfs/cbi/work/data/wlsubj001.bOVWwnxx/data/derivatives/freesurfer/sub-wlsubj001/touch/rusage.mris_inflate.lh.dat -n 50 ../surf/lh.smoothwm ../surf/lh.inflated

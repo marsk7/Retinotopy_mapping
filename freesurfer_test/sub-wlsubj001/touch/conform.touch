@@ -1,0 +1,1 @@
+mri_convert /beegfs/cbi/work/data/wlsubj001.bOVWwnxx/data/derivatives/freesurfer/sub-wlsubj001/mri/rawavg.mgz /beegfs/cbi/work/data/wlsubj001.bOVWwnxx/data/derivatives/freesurfer/sub-wlsubj001/mri/orig.mgz --conform_min

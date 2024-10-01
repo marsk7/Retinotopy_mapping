@@ -1,0 +1,1 @@
+mri_normalize -g 1 -mprage -noconform nu.mgz T1.mgz

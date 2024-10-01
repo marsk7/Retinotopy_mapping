@@ -1,0 +1,21 @@
+#
+# Function Description
+#  Show product version information
+#
+# Example Call
+#  version_show $@
+#
+version_show() {
+    local scriptName=$(basename ${0})
+    local tool
+    local version
+
+    tool="HCP Pipeline Scripts"
+
+    if [ -f "${HCPPIPEDIR}"/show_version ]; then
+        version=`"${HCPPIPEDIR}"/show_version --short`
+    else
+        version="Version unknown"
+    fi
+    echo "${scriptName} - ${tool} - ${version}"
+}

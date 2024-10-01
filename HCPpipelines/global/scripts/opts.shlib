@@ -1,0 +1,141 @@
+#
+# Description:
+# 
+#   parses the input command line for a specified command line option
+#
+# Input:
+# 
+#   The first parameter is the command line option to look for.
+#   The remaining parameters are the full list of command line arguments
+#
+opts_GetOpt1() {
+    sopt="$1"
+    shift 1
+    for fn in "$@" ; do
+    if [ `echo $fn | grep -- "^${sopt}=" | wc -w` -gt 0 ] ; then
+        echo "$fn" | sed "s/^${sopt}=//"
+        return 0
+    fi
+    done
+}
+
+#
+# Description: 
+#
+#   This function is intended to be used to return a default value for a
+#   variable that currently has no value.
+#
+#   Suppose the variable X currently has no value, then an invocation
+#   of this function like:
+#   
+#    X=`opts_DefaultOpt $X "aDefault"`
+#
+#   will assign the value "aDefault" to X. Thus it assigns a default
+#   value for an unset variable.
+#
+#   If the variable X has any value other than "spaces" set, e.g. 
+#   "hello", then a similar invocation would simply reassign "hello"
+#   to the variable X. Essentially having no effect.
+#
+opts_DefaultOpt() {
+    echo $1
+}
+
+#
+# Description: 
+#
+#   checks command line arguments for "--version" indicating that
+#   version information has been requested
+#
+# Input: 
+#
+#   The full list of command line arguments
+#   
+opts_CheckForVersionRequest() {
+    for fn in "$@" ; do
+        if [ "$fn" = "--version" ]; then
+            return 0
+        fi
+    done
+    return 1
+}
+
+#
+# Description: 
+#
+#   checks command line arguments for "--help" or "-h" indicating that
+#   help has been requested
+#
+# Input: 
+#
+#   The full list of command line arguments
+#   
+opts_CheckForHelpRequest() {
+    for fn in "$@" ; do
+        if [ "$fn" = "--help" ] || [ "$fn" = "-h" ]; then
+            return 0
+        fi
+    done
+    return 1
+}
+
+# 
+# Description:
+# 
+#   checks command line arguments for implicit indication
+#   that help has been requested.  A help request is 
+#   inferred from the tool being invoked with no 
+#   command line arguments
+#
+# Input:
+# 
+#   The full list of command line arguments
+#
+opts_CheckForImplicitHelpRequest() {
+    if [ $# -eq 0 ] ; then
+        return 0
+    fi
+    return 1
+}
+
+#
+# Description:
+#
+#   If the script is invoked with a version information request 
+#   option, report any available version identifying information
+#   for the HCP Pipeline Tools product (from the show_version
+#   script in the root directory) and exit.
+# 
+opts_ShowVersionIfRequested() {
+    if opts_CheckForVersionRequest $@; then
+        tool="HCP Pipeline Scripts"
+        
+        if [ -f "${HCPPIPEDIR}"/show_version ]; then
+            version=`"${HCPPIPEDIR}"/show_version --short`
+        else
+            version="Version unknown"
+        fi
+        echo "${tool} - ${version}"
+        exit 0
+    fi
+}
+
+
+#
+# Description: 
+#
+#   checks command line arguments for existance of a specific flag
+#
+# Input: 
+#
+#   The full list of command line arguments
+#   
+opts_CheckForFlag() {
+    needle=$1
+    for fn in "${@:2}" ; do
+        if [ "$fn" = "$needle" ]; then
+            return 0
+        fi
+    done
+    return 1
+}

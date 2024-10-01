@@ -13,7 +13,7 @@ The following arguments mean:
 -m maps to be generated (e.g. "polarAngle,eccentricity,pRFsize")
 
 ### e.g.
-`!deepRetinotopy -s /neurodesktop-storage/nyu_retinotopy_data/freesurfer/sub-wlsubj001/surf \
-                -t /neurodesktop-storage/HCPpipelines-master/global/templates/standard_mesh_atlases/resample_fsaverage/fs_LR-deformed_to-fsaverage.L.sphere.32k_fs_LR.surf.gii \
+`!deepRetinotopy -s /neurodesktop-storage/nyu_retinotopy_data/freesurfer_test/ \
+                -t /neurodesktop-storage/HCPpipelines-master/global/templates/standard_mesh_atlases/resample_fsaverage/ \
                 -d nyu \
-                -m polarAngle,eccentricity`
+                -m "polarAngle,eccentricity"`

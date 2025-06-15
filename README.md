@@ -18,3 +18,26 @@ You can access the dataset via [https://openneuro.org/datasets/ds003787/versions
 - **DOI**: [10.18112/openneuro.ds004217.v1.0.0](https://doi.org/10.18112/openneuro.ds003787.v1.0.1)  
 - **License**: CC0 Public Domain Dedication
 
+---
+
+## 🧪 Computational Environment: Neurodesk
+
+All processing and analysis in this project were conducted using [**Neurodesk**](https://www.neurodesk.org/), a modular and reproducible platform for neuroimaging research. Neurodesk provides containerized versions of neuroimaging tools that can be run locally or in the cloud.
+
+### 🚀 Why Neurodesk?
+
+- **Reproducibility**: All tools (FreeSurfer, Python, MATLAB, etc.) run in standardized containers.
+- **Portability**: Compatible with desktop, HPC, and cloud environments.
+- **Convenience**: Preconfigured neuroimaging software stack with GUI and CLI support.
+
+---
+
+### 🛠 Setup Instructions (Local or Virtual Environment)
+
+1. Launch Neurodesk:
+   - Select environment and system to setup
+   - Follow the instructions [**Neurodesk**](https://www.neurodesk.org/)
+
+2. Navigate to the storage folder:
+   ```bash
+   cd /neurodesktop-storage

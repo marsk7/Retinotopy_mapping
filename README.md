@@ -74,7 +74,7 @@ The analysis was conducted using a series of modular Jupyter notebooks. Each not
 ### 🧭 Surface Definition and Prediction
 
 - **`freesurfer_test`**  
-  A curated folder containing only atypical subjects identified from the NYU dataset.
+  A curated folder containing only atypical subjects identified from the NYU dataset, should mannuly add subject in it.
 
 - **Folder Duplication for Surface Manipulation**  
   The `freesurfer_test` directory is duplicated into two working directories:

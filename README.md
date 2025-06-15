@@ -18,6 +18,17 @@ You can access the dataset via [https://openneuro.org/datasets/ds003787/versions
 - **DOI**: [10.18112/openneuro.ds004217.v1.0.0](https://doi.org/10.18112/openneuro.ds003787.v1.0.1)  
 - **License**: CC0 Public Domain Dedication
 
+After downloading the dataset, the folder nyu_retinotopy_data/derivatives/freesurfer contains surface reconstructions for all subjects. This is the primary directory used for generating anatomical features and running predictions with DeepRetinotopy.
+
+To simplify testing and reduce compute overhead, we selectively copy subjects with atypical maps into a new working folder:
+
+```bash
+   mkdir -p nyu_retinotopy_data/freesurfer_test
+
+   # Example: manually copy atypical subjects (based on classification)
+   cp -r nyu_retinotopy_data/freesurfer/sub-wlsubjXXX nyu_retinotopy_data/freesurfer_test/
+```
+
 ---
 
 ## 🧪 Computational Environment: Neurodesk
@@ -30,8 +41,6 @@ All processing and analysis in this project were conducted using [**Neurodesk**]
 - **Portability**: Compatible with desktop, HPC, and cloud environments.
 - **Convenience**: Preconfigured neuroimaging software stack with GUI and CLI support.
 
----
-
 ### 🛠 Setup Instructions (Local or Virtual Environment)
 
 1. Launch Neurodesk:
@@ -41,3 +50,4 @@ All processing and analysis in this project were conducted using [**Neurodesk**]
 2. Navigate to the storage folder:
    ```bash
    cd /neurodesktop-storage
+   ```

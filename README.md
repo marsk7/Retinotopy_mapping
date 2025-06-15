@@ -6,3 +6,15 @@ Retinotopic mapping refers to the topographic representation of the visual field
 
 Using the **NYU Retinotopy Dataset** (which was not used in the training of DeepRetinotopy), we systematically compared predicted maps across three surface types. Our results show that the model is generally robust to surface changes, but significant deviations can occur—especially with the pial surface—highlighting the importance of quality control in surface reconstruction and model interpretation.
 
+## 📁 Dataset
+
+This project uses the **NYU Retinotopy Dataset**, a publicly available collection of high-resolution anatomical and functional MRI scans suitable for retinotopic analysis.
+
+### 🔗 Dataset Access
+
+You can access the dataset via [OpenNeuro: ds004217](https://openneuro.org/datasets/ds003787/versions/1.0.1):
+
+- **Dataset name**: NYU Retinotopy Dataset  
+- **DOI**: [10.18112/openneuro.ds004217.v1.0.0](https://doi.org/10.18112/openneuro.ds003787.v1.0.1)  
+- **License**: CC0 Public Domain Dedication
+

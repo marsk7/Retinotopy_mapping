@@ -51,3 +51,56 @@ All processing and analysis in this project were conducted using [**Neurodesk**]
    ```bash
    cd /neurodesktop-storage
    ```
+
+---
+
+## 🧪 Method
+
+The analysis was conducted using a series of modular Jupyter notebooks. Each notebook corresponds to a specific step in the pipeline, from preprocessing angle data to generating predictions and comparing surfaces.
+
+### 🔄 Preprocessing and Conversion
+
+- **`angle_convert_multi.ipynb`**  
+  Converts polar angle values to a standardized range between 90° and 270° to match the expected retinotopic layout for the right hemisphere.
+
+- **`tempspace_convert.ipynb`**  
+  Projects the angle files into the 32k fs_LR space using a consistent surface template, enabling direct comparison across subjects and surfaces.
+
+- **`vexpl_convert.ipynb`**  
+  Converts variance explained (`vexpl`) maps from the original space to the 32k fs_LR surface space to support evaluation of empirical map reliability.
+
+---
+
+### 🧭 Surface Definition and Prediction
+
+- **`freesurfer_test`**  
+  A curated folder containing only atypical subjects identified from the NYU dataset.
+
+- **Folder Duplication for Surface Manipulation**  
+  The `freesurfer_test` directory is duplicated into two working directories:
+  - `freesurfer_pial2mid`: Replaces surface files with **pial**.
+  - `freesurfer_white2mid`: Replaces surface files with **white**.
+  These versions simulate alternative surface definitions for downstream prediction.
+
+- **`deepretinotopy_001.ipynb`**  
+  Runs DeepRetinotopy predictions on the **original** (mid-thickness) surfaces in `freesurfer_test`.
+
+- **`pial_white_2graymid.ipynb`**  
+  Duplicates pial and white surface files, renames them to mimic mid-thickness, and applies DeepRetinotopy predictions separately on each, generating predicted polar angle and eccentricity maps.
+
+---
+
+### 📊 Evaluation and Surface Comparison
+
+- **`comparison_Vexpl.ipynb`**  
+  Visualizes and analyzes the relationship between prediction errors and the variance explained by the empirical pRF model. Helps assess the reliability of ground truth maps.
+
+- **`comparison_diffsur.ipynb`**  
+  Compares predicted maps across three surface definitions (mid-thickness, pial, white) and evaluates consistency, highlighting cases where surface choice significantly impacts predictions.
+
+- **`distance_pial&white.ipynb`**  
+  Investigates subjects with substantial prediction discrepancies, examining curvature, vertex-level errors, and possible segmentation artifacts in the pial/white surfaces.
+
+---
+
+Each notebook is documented and modular, allowing reproducibility and interpretability of each step in the retinotopic mapping analysis pipeline.

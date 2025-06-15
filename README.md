@@ -22,12 +22,12 @@ After downloading the dataset, the folder nyu_retinotopy_data/derivatives/freesu
 
 To simplify testing and reduce compute overhead, we selectively copy subjects with atypical maps into a new working folder:
 
-```bash
+   ```bash
    mkdir -p nyu_retinotopy_data/freesurfer_test
 
    # Example: manually copy atypical subjects (based on classification)
    cp -r nyu_retinotopy_data/freesurfer/sub-wlsubjXXX nyu_retinotopy_data/freesurfer_test/
-```
+   ```
 
 ---
 

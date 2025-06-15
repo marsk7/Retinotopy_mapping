@@ -12,7 +12,7 @@ This project uses the **NYU Retinotopy Dataset**, a publicly available collectio
 
 ### 🔗 Dataset Access
 
-You can access the dataset via [OpenNeuro: ds004217](https://openneuro.org/datasets/ds003787/versions/1.0.1):
+You can access the dataset via [https://openneuro.org/datasets/ds003787/versions/1.0.1](https://openneuro.org/datasets/ds003787/versions/1.0.1):
 
 - **Dataset name**: NYU Retinotopy Dataset  
 - **DOI**: [10.18112/openneuro.ds004217.v1.0.0](https://doi.org/10.18112/openneuro.ds003787.v1.0.1)  
